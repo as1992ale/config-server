@@ -1,0 +1,14 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/as1992ale/config-server
+          default-label: main
+          search-paths: '{application}'
+          clone-on-start: true
